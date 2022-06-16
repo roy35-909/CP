@@ -1,28 +1,33 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int first = 0,sec = 0,n;
+ int t;
+ cin >>t;
 
-    cin >> n;
-    while(n!=0)
-    {
-        int s[n];
-        for(int i=0;i<n;i++)
-        {
-            int a;
-            cin >>a;
-            s[i] = a;
-            if(a>s[first]){
-                sec = first;
-                first = i;
-            }
-            else if(a>s[sec]){
-                sec = i;
-            }
-        }
-        cout << sec+1<<endl;
-        first = 0;sec=0;
-        cin >> n;
+ while(t!=0)
+ {
+    vector<int>v;
+    vector<int>c;
+
+    while(t--){
+    int a;
+    cin >>a;
+    v.push_back(a);
     }
+    c = v;
+
+    int s = c.size();
+    sort(c.begin(),c.end());
+
+    for(int i=0;i<v.size();i++){
+      if(v[i]==c[s-2]){
+        cout<<i+1<<endl;
+      }
+    }
+
+  cin >>t;
+ }
+
+
 }
