@@ -1,9 +1,3 @@
-/*
-        Author : Simanta Kumar Roy
-        Daffodil International University
-        221-35-909
-        roy35-909@diu.edu.bd
-*/
 #include<stdio.h>
 int main()
 {
@@ -32,7 +26,7 @@ int main()
             printf("\n Not Found !!");
             break;
         }
-
+        else
             if(arr[mid]==s){
                 printf("\n %d ",mid);
                 break;
@@ -43,4 +37,3 @@ int main()
                 max = mid-1;
     }
 }
-
