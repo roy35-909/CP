@@ -1,3 +1,9 @@
+/*
+        Author : Simanta Kumar Roy
+        Daffodil International University
+        221-35-909
+        roy35-909@diu.edu.bd
+*/
 #include<stdio.h>
 int main()
 {
@@ -11,9 +17,7 @@ int main()
     for(int i=0;i<n;i++)
         printf("%d ",a[i]);
     int del_index,del_value;
-    while(1)
-        if(n)
-        break;
+    while(n)
     {
         int flag=0;
     printf("\n Element that you want to delet : ");
