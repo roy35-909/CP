@@ -26,9 +26,18 @@ for(int i=0;i<array_size;i++)
     printf("Array[%d] : ",i+array_size);
     scanf("%d",&arr2[i]);
 }
+
+// Final Array Call
+int Total_array[array_size*2];
+
+// Copy 2 array into One Final Array
 for(int i=0;i<array_size;i++)
-    printf("%d ",arr[i]);
+    Total_array[i] = arr[i];
 for(int i=0;i<array_size;i++)
-    printf("%d ",arr2[i]);
+    Total_array[i+array_size] = arr2[i];
+
+//Printing Final Array
+for(int i=0;i<array_size*2;i++)
+    printf("%d ",Total_array[i]);
 
 }
