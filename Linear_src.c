@@ -9,7 +9,7 @@
 int main()
 {
     //Array
-    char arr[5]="abcde";
+    char arr[5]={'a','b','c','d','e'};
     char s;
 
     //Array Printing
