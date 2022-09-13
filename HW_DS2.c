@@ -73,7 +73,11 @@ int main()
    char temp4[1];
    scanf("%s",&temp4);
    insert_char(4,arr,temp4);
-   print(arr);
+
+    printf("\nNo more char else overflow\n");
+    for(int i=4;i>=0;i--)
+        printf("%c",arr[i]);
+
 
 
 }
