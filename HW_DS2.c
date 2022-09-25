@@ -32,6 +32,12 @@ int main()
 
    }
 
+   while(1)
+   {
+       int chose;
+       printf("1 for insert");
+   }
+
    printf("Enter 3 Char : ");
    char temp[3];
    scanf("%s",&temp);
