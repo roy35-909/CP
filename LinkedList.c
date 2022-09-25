@@ -24,6 +24,7 @@ int main()
     head = (struct Node*)malloc(sizeof(struct Node));
     second = (struct Node*)malloc(sizeof(struct Node));
     third = (struct Node*)malloc(sizeof(struct Node));
+    struct Node* forth = (struct Node*)malloc(sizeof(struct Node));
     head->roll = 1;
     head->age = 18;
     head->name = 'S';
@@ -37,11 +38,18 @@ int main()
     third->roll=30;
     third->age = 16;
     third->name = 'M';
-    third->next = NULL;
+    third->next = forth;
+
+    forth->roll = 12;
+    forth->age = 13;
+    forth->name = 'A';
+    forth->next = NULL;
+
 
     printf("Roll %d : Age %d : Name : %c \n",head->roll,head->age,head->name);
     printf("Roll %d : Age %d : Name : %c \n",second->roll,second->age,second->name);
     printf("Roll %d : Age %d : Name : %c \n",third->roll,third->age,third->name);
+    printf("Roll %d : Age %d : Name : %c \n",forth->roll,forth->age,forth->name);
 
 
 }
