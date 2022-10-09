@@ -28,7 +28,7 @@ int main()
     {
 
        int mid = (min+max)/2;
-        if(arr[mid]!=s&&min==max){
+        if(arr[mid]!=s&&min>=max){
             printf("\n Not Found !!");
             break;
         }

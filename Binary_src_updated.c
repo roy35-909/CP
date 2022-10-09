@@ -45,7 +45,7 @@ for(int i=0;i<n;i++)
     {
 
        int mid = (min+max)/2;
-        if(arr[mid]!=s&&min==max){
+        if(arr[mid]!=s&&min>=max){
             printf("\n Not Found !!");
             break;
         }
